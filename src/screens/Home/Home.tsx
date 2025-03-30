@@ -1,4 +1,5 @@
 import { useTheme } from '@/hooks';
+import { AnimatedCircleButton } from '@/components';
 import React, { Fragment } from 'react';
 import { Text, View } from 'react-native';
 
@@ -16,9 +17,14 @@ const Home = () => {
           Layout.alignItemsCenter,
         ]}
       >
-        <View style={{ backgroundColor: 'red' }}>
-          <Text>Hello, World!</Text>
-        </View>
+        <AnimatedCircleButton
+          size={180}
+          backgroundColor="#007AFF"
+          style={{}}
+          onPress={() => console.log('Button pressed!')}
+        >
+          <Text style={{ color: 'white', fontSize: 30 }}>Sync</Text>
+        </AnimatedCircleButton>
       </View>
     </Fragment>
   );
